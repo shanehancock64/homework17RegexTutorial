@@ -1,10 +1,12 @@
-# Title (replace with your title)
+# Title (Regex Tutorial)
 
 Introductory paragraph (replace this with your text)
-
+ 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Regex or regular expression is a set of characters that define search patterns in a text.
+example: 
+https?:\/\/(www\.)?[\d-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
 
 ## Table of Contents
 
@@ -20,21 +22,34 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+Anchors are used at the beginning and end of searches to check if a string fully matches a pattern.
 
+Use the ^ anchor to match the beginning of the text.
+Use the $ anchor to match the end of the text.
 ### Quantifiers
-
+ A range of numbers placed between two curly brackets ({}) that set the minimum and maximum limits for each section of the string.
 ### Grouping Constructs
+Grouping is a pattern that is enclosed in parentheses () and treats multiple characters as one whole unit. 
+example: (www\.)?[\d-a-zA-Z0-9@:%._\+~#=] 
 
 ### Bracket Expressions
-
+Contains an expression in square brackets []. 
 ### Character Classes
+Searches for set of characters in a string. 
+example:
+\d searches for and digits.
+\D searches for non-digits.
+\s searches for spaces/tabs/and new lines. 
+\w searches for alphanumeric characters. 
 
 ### The OR Operator
+OR operator matches characters to the left or right of an operator working as an (and/or)
+example: a|A
 
 ### Flags
-
+Flags are used at the end of a REGEX. Flags modify parameters of a search. Flags must be written in lower case. 
 ### Character Escapes
 
 ## Author
-
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+ Shane Hancock aspiring full stack developer
+ https://github.com/shanehancock64
